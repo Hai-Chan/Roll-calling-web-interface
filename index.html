@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roll call</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Library for Excel Export -->
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="header-card">
+      <div class="profile-icon">
+        <img src="ava.png" alt="Profile" class="profile-img">
+        <div class="dot"></div>
+      </div>
+
+      <div>
+        <h1>Attendance check!!!</h1>
+        <p>hai_dep_trai</p>
+      </div>
+    </header>
+
+    <div class="main-grid">
+      <div class="card control-panel">
+        <h2>Schedule</h2>
+        <div id="employees" class="employee-list"></div>
+
+        <div class="action-buttons">
+          <button onclick="addEmployee()" class="btn btn-secondary" type="button">
+            <span>+ Add Employee</span>
+          </button>
+          <button onclick="generate()" class="btn btn-primary" type="button">
+            <span>Generate Schedule</span>
+          </button>
+          <button onclick="exportToExcel()" class="btn btn-success" type="button">
+            <span>Export to Excel</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card output-panel">
+        <h2>Results</h2>
+        <div id="output" class="output-content">
+          <p class="placeholder-text">Generate schedule to view results</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Drag Time Picker Modal -->
+  <div id="timePickerModal" class="time-picker-modal hidden">
+    <div class="time-picker-dialog" role="dialog" aria-modal="true" aria-label="Time picker">
+      <div class="picker-title">SELECT TIME</div>
+
+      <div class="digital-display">
+        <div id="displayHour" class="display-box active">07</div>
+        <div class="display-separator">:</div>
+        <div id="displayMinute" class="display-box">00</div>
+
+        <div class="ampm-toggle">
+          <button id="amBtn" class="ampm-btn active" type="button">AM</button>
+          <button id="pmBtn" class="ampm-btn" type="button">PM</button>
+        </div>
+      </div>
+
+      <div class="clock-stage">
+        <div id="clockDial" class="clock-dial">
+          <div id="clockHand" class="clock-hand"></div>
+          <div id="clockCenter" class="clock-center"></div>
+          <div id="clockKnob" class="clock-knob">7</div>
+        </div>
+      </div>
+
+      <div class="picker-hint">
+        <span id="pickerHintText">Select time by dragging or clicking on the clock face</span>
+      </div>
+
+      <div class="picker-footer">
+        <button class="footer-btn cancel-btn" id="cancelTimePicker" type="button">CANCEL</button>
+        <button class="footer-btn ok-btn" id="confirmTimePicker" type="button">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
