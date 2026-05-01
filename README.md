@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Attendance / Schedule Generator
 
 A small attendance + work schedule generator UI I made for quickly setting employee shifts, generating a monthly table, and exporting everything to Excel.
@@ -10,7 +11,7 @@ It has:
 - Excel export
 - A custom draggable clock time picker UI
 
-Just a small project to make sure i learned js and html properly
+Just a small project to make sure i learned js and html properly :>>
 
 ---
 
@@ -18,33 +19,31 @@ Just a small project to make sure i learned js and html properly
 
 Main idea of the app:
 
-- add employees
-- set shift 1 / shift 2
-- choose weekly off days
-- generate a monthly schedule
-- export the result to `.xlsx`
+- Add employees
+- Set shift 1 / shift 2
+- Choose weekly off days
+- Generate a monthly schedule
+- Export the result to `.xlsx`
 
 The time picker is custom:
-- the **digital clock on top is display only**
-- the **dial clock below is the real interaction**
-- supports dragging / clicking
+- Adjust **dial clock for time interaction**
+- Press hold to drag the dial to chose time
 - AM / PM toggle included
 
 ---
 
 ## Features
 
-- Add up to **8 employees**
+- Add up to **8 employees** (changeable depends on user's need )
 - Set:
-  - employee name
-  - shift 1 start/end
-  - optional shift 2 start/end
-  - weekly off days
+  - Employee name
+  - Shifts start/end and optional second shift
+  - Can chose weekly off days
 - Generate a **31-day monthly schedule**
-- Randomize time offsets so the result is not too robotic
 - Handle off-days cleanly in the output
 - Export each employee as a separate Excel sheet
 - Custom **drag-based analog clock picker**
+- Huge feature: employee's time are completely randomized, offset ±10 minutes, work time never exceeds 24h or 0AM and --> **All automated**
 
 ---
 
@@ -57,3 +56,7 @@ The time picker is custom:
 ├── script.js
 ├── ava.png
 └── README.md
+=======
+# Roll-calling-web-interface
+Just a small website for attendance check, simple UI but completely functional and support excel export
+>>>>>>> da0241e1e3323f20b987168cb5daa86a532fffab
