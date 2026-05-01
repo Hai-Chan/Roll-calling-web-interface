@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Smart Attendance / Schedule Generator
+# Attendance generator
 
 A small attendance + work schedule generator UI I made for quickly setting employee shifts, generating a monthly table, and exporting everything to Excel.
 
@@ -56,7 +55,3 @@ The time picker is custom:
 ├── script.js
 ├── ava.png
 └── README.md
-=======
-# Roll-calling-web-interface
-Just a small website for attendance check, simple UI but completely functional and support excel export
->>>>>>> da0241e1e3323f20b987168cb5daa86a532fffab
